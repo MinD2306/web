@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    img{
+        width:400px;
+        height:auto;
+        display:block;
+        margin:0 auto;
+        transition:all 3s;
+    }
+
+    img:hover{
+        -webkit-filter:none;
+    }
+    .img1{
+         /*滤镜属性*/
+        -webkit-filter:grayscale(1);/*设置灰度 1 100%灰 0 正常*/
+    }
+    .img2{
+         /*亮度属性*/
+        -webkit-filter:brightness(2);/*亮度 0 纯黑  2 曝光过度*/
+    }
+    .img3{
+         /*褐色*/
+        -webkit-filter:sepia(2);/*褐色 0 原色*/
+    }
+    .img4{
+         /*模糊度*/
+        -webkit-filter:blur(5px);/*单位是像素*/
+    }
+    .img5{
+         /*对比度*/
+        -webkit-filter:contrast(2);/*对比度 0是灰 1是正常*/
+    }
+    .img6{
+         /*饱和度*/
+        -webkit-filter:saturate(5);/*饱和度 */
+    }
+    .img7{
+         /*色相度*/
+        -webkit-filter:invert(1);/*胶片底色 */
+    }
+    .img8{
+         /*色相旋转*/
+        -webkit-filter:hue-rotate(90deg);/*90人脸发绿*/
+    }
+    .img9{
+         /*色相旋转*/
+        -webkit-filter:blur(10px) brightness(20) grayscale(1);
+        transition:all 5s;
+    }
+    .img9:hover{
+        
+        -webkit-filter:blur(0px) brightness(1) grayscale(1);
+  
+    }
+    </style>
+</head>
+<body>
+    <img class="img1" src="cai.jpg">
+    <img class="img2" src="cai.jpg">
+    <img class="img3" src="cai.jpg">
+    <img class="img4" src="cai.jpg">
+    <img class="img5" src="cai.jpg">
+    <img class="img6" src="cai.jpg">
+    <img class="img7" src="cai.jpg">
+    <img class="img8" src="cai.jpg">
+    <img class="img9" src="cai.jpg">
+</body>
+</html>
